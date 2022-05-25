@@ -1,0 +1,30 @@
+
+// Etch-a-Sketch SCSS
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+}
+
+@mixin bringCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$BG: #2C2B2B;
+$EtchColor: #FF0000;
+$mainBorder: 1px solid black;
+
+// ---------------------------
+
