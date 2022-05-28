@@ -29,6 +29,8 @@ main {
   height: 525px;
   width: 675px;
   border-radius: 0.4rem;
+  position: relative;
+  border: 2.5px solid black;
 }
 
 main h1 {
@@ -47,6 +49,10 @@ main h1 {
   padding-top: 0.5rem;
   font-family: 'Henny Penny';
   text-shadow: -3px 0 black, 0 2px black, 1px 0 black, 0 -2px black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 main .knobs {
@@ -70,6 +76,110 @@ main .knobs div:nth-child(2) {
   border: 2.5px solid black;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+}
+
+main .topPanel {
+  width: 180px;
+  height: 65px;
+  background: white;
+  position: absolute;
+  top: -6.5rem;
+  right: 0;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border: 2.5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+}
+
+main .topPanel > h4 {
+  font-size: 1.7rem;
+  font-family: 'Kanit';
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .topPanel input[type='range'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+}
+
+main .topPanel input[type='range']::-webkit-slider-runnable-track {
+  width: 11rem;
+  height: 1rem;
+  background: #d1d1d1;
+  border-radius: 0.5rem;
+}
+
+main .topPanel input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  background: black;
+  margin-top: -3.5px;
+  cursor: pointer;
+}
+
+main .bottomPanel {
+  width: 350px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  bottom: -6rem;
+  left: 7rem;
+  border: 2.5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .bottomPanel button {
+  padding: 0.2rem 0.7rem;
+  font-family: 'Kanit', 'Arial';
+  cursor: pointer;
+}
+
+main .bottomPanel label {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: black;
+}
+
+main .bottomPanel input[type='color'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0;
+  border: none;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
 }
 
 .screen {

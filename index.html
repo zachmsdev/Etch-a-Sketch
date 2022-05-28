@@ -8,10 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <main>
+        <aside class='topPanel'>
+            <h4>16 x 16</h4>
+            <div class='rangeSlider'><input type='range'></div>
+        </aside>
         <h1>Etch A Sketch</h1>
         <section class='screen'>
 
@@ -20,6 +25,12 @@
             <div></div>
             <div></div>
         </section>
+        <aside class='bottomPanel'>
+            <label><input type='color'></label>
+            <button class='clear'>CLEAR</button>
+            <button class='erase'>ERASE</button>
+            <button class='rgb'>RGB</button>
+        </aside>
     </main>
     
     <script src='etch.js'></script>
