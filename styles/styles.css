@@ -180,6 +180,7 @@ main .bottomPanel input[type='color'] {
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
+  background: black;
 }
 
 .screen {
@@ -188,5 +189,15 @@ main .bottomPanel input[type='color'] {
   margin: 0 auto;
   background: #D9D9D9;
   border: 2.5px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[16];
+      grid-template-columns: repeat(16, 1fr);
+  -ms-grid-rows: (1fr)[16];
+      grid-template-rows: repeat(16, 1fr);
+}
+
+.screen > div {
+  border: 1px solid gray;
 }
 /*# sourceMappingURL=styles.css.map */
