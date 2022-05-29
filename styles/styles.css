@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: #2C2B2B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,5 +199,9 @@ main .bottomPanel input[type='color'] {
 
 .screen > div {
   border: 1px solid gray;
+}
+
+.active {
+  background: yellow;
 }
 /*# sourceMappingURL=styles.css.map */

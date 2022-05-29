@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: #2C2B2B;
     display: flex;
     justify-content: center;
@@ -153,4 +153,8 @@ main {
         border: 1px solid gray;
         
     }
+}
+
+.active {
+    background: yellow;
 }
