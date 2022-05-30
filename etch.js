@@ -14,6 +14,7 @@ let activeBtn = false;
 let mousePressed = false;
 
 const updateXY = (e) => {
+    e.preventDefault();
     xValue.textContent = e.target.value;
     yValue.textContent = e.target.value;
 }
