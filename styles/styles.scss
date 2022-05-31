@@ -33,7 +33,7 @@ $mainBorder: 2.5px solid black;
 
 main {
     background: $EtchColor;
-    height: 500px;
+    height: 510px;
     width: 675px;
     border-radius: 0.4rem;
     position: relative;
@@ -144,8 +144,7 @@ main {
     height: 74%;
     width: 500px;
     margin: 0 auto;
-    background: #D9D9D9;
-    // border-radius: 2rem;      
+    background: #D9D9D9;   
     border: $mainBorder; 
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -161,10 +160,4 @@ main {
     border: none;
     padding: 0.5rem 0.9rem !important;
     color: white;
-}
-
-@media only screen and (max-height: 630px) {
-    main {
-        height: 485px;
-    }
 }

@@ -26,7 +26,7 @@ body {
 
 main {
   background: #FF0000;
-  height: 500px;
+  height: 510px;
   width: 675px;
   border-radius: 0.4rem;
   position: relative;
@@ -208,11 +208,5 @@ main .bottomPanel input[type='color'] {
   border: none;
   padding: 0.5rem 0.9rem !important;
   color: white;
-}
-
-@media only screen and (max-height: 630px) {
-  main {
-    height: 485px;
-  }
 }
 /*# sourceMappingURL=styles.css.map */
